@@ -121,3 +121,12 @@ The Python tooling is managed by [uv](https://docs.astral.sh/uv/), which keeps d
    uv run jupyter lab                           # open the notebooks
    ```
 5. When dependencies change, run `uv lock` (or simply `uv sync`) to refresh the lockfile before committing.
+
+
+## Running notebooks in isolated envs
+
+uvx + juv can instantly run notebooks with the dependencies defines inside the notebooks first cell.
+
+```
+uvx juv run lonboard.ipynb
+```
