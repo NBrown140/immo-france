@@ -1,0 +1,23 @@
+[project]
+name = "immo-france"
+version = "0.1.0"
+description = "Utilities for exploring French real-estate valuations and geocoding experiments."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "geopandas>=0.14",
+    "lonboard>=0.13.0",
+    "pandas>=2.2",
+    "requests>=2.32",
+    "shapely>=2.0",
+    "tqdm>=4.66",
+]
+
+[dependency-groups]
+notebooks = [
+    "ipykernel>=6.29",
+    "jupyterlab>=4.3",
+]
+
+[tool.uv]
+package = false
